@@ -4,7 +4,6 @@ pipeline {
             label 'maven1'
         }
     }
-}
 stages {
     stage("build"){
         steps {
