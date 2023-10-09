@@ -12,7 +12,7 @@ stages {
     }
     stage('SonarQube analysis') {
     environment{
-        scannerHome = tool 'prashanth-sonar-scanner 5.0'
+        scannerHome = tool 'prashanth-sonar-scanner'
     }
     steps{
         withSonarQubeEnv('prashanth-sonar-server'){
