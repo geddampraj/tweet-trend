@@ -11,11 +11,11 @@ stages {
         }
     }
     stage('SonarQube analysis') {
-    environment{
-        scannerHome = tool 'prashanth-sonar-scanner'
+    environment {
+      scannerHome = tool 'prashanth-sonar-scanner'
     }
     steps{
-        withSonarQubeEnv('prashanth-sonar-server'){
+    withSonarQubeEnv('prashanth-sonar-server'){
             sh "${scannerHome}/bin/sonar-scanner"
         }
     }
