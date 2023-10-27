@@ -58,7 +58,7 @@ stages {
         steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
-                docker.withRegistry(registry, 'artfiact-cred'){
+                docker.withRegistry(registry, 'artifact-cred'){
                     app.push()
                 }    
                echo '<--------------- Docker Publish Ended --------------->'  
