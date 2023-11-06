@@ -17,7 +17,7 @@ spec:
       - name: jfrogcred 
       containers:
       - name:  trend-deploy
-        image: prashanth02.jfrog.io/prashanth-docker/ttrend/2.1.2
+        image: prashanth02.jfrog.io/prashanth-docker/ttrend:2.1.2
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
