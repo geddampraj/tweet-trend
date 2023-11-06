@@ -66,8 +66,8 @@ stages {
         }
     }
     stage ("Deploy"){
-       steps{
-          script{
+       steps {
+          script {
               sh './deploy.sh'
           }
        }
